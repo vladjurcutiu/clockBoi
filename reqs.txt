@@ -1,0 +1,10 @@
+>timer
+	>set timer
+	>countdown from set time
+	>audio alert on end of timer
+	>select clicker to keep track
+>clicker
+	>set number of clickers
+	>add a value to the clicker
+	>decrease by one with every click
+	>commit to memory or text file

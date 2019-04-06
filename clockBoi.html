@@ -1,0 +1,35 @@
+!<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <script>
+      var sec = 0;
+      var newSec = 0;
+      var min = 0;
+      var tracker = 0;
+
+      setInterval(function() {
+        newSec = sec++;
+        console.log(newSec);
+        if (newSec == 5) {
+          min++;
+          sec = 0;
+          console.log(min);
+        }
+        if (min == 2) {
+          alert("BOOM");
+          min = 0;
+          tracker++;
+        }
+        if (tracker == 2) {
+          alert("50 min starts now");
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
