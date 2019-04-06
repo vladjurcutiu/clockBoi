@@ -16,17 +16,17 @@
       setInterval(function() {
         newSec = sec++;
         console.log(newSec);
-        if (newSec == 5) {
+        if (newSec == 60) {
           min++;
           sec = 0;
           console.log(min);
         }
-        if (min == 2) {
+        if (min == 5) {
           alert("BOOM");
           min = 0;
           tracker++;
         }
-        if (tracker == 2) {
+        if (tracker == 36) {
           alert("50 min starts now");
         }
       }, 1000);
